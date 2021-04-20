@@ -1,1 +1,1 @@
-web: cd ./inventory_management_system_using_django && gunicorn inventory.wsgi
+web: gunicorn inventory.wsgi

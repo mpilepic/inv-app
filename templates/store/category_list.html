@@ -17,9 +17,9 @@
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Category</a></li>
-                            <li class="active">List</li>
+                            <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                            <li><a href="#">Kategorije</a></li>
+                            <li class="active">Pregled</li>
                         </ol>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="box-title">Drop List </h4>
+                <h4 class="box-title">Pregled kategorija</h4>
             </div>
             <div class="card-body--">
                 <div class="table-stats order-table ov-h">
@@ -42,8 +42,8 @@
                         <thead>
                             <tr>
                                 <th class="serial">#</th>
-                                <th>Name</th>
-                                <th>Date</th>
+                                <th>Ime</th>
+                                <th>Datum</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -56,7 +56,7 @@
                             </tr>
                             {% endfor %}
                             {% else %}
-                                <tr><td>No Drop Data</td></tr>
+                                <tr><td>Nema podataka o kategorijama</td></tr>
                             {% endif %}
                         </tbody>
                     </table>

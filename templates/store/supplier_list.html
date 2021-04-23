@@ -17,9 +17,9 @@
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Supplier</a></li>
-                            <li class="active">List</li>
+                            <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                            <li><a href="#">Dobavljači</a></li>
+                            <li class="active">Pregled</li>
                         </ol>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="box-title">Supplier List </h4>
+                <h4 class="box-title">Pregled dobavljača</h4>
             </div>
             <div class="card-body--">
                 <div class="table-stats order-table ov-h">
@@ -42,10 +42,10 @@
                         <thead>
                             <tr>
                                 <th class="serial">#</th>
-                                <th>Name</th>
-                                <th>Address</th>
+                                <th>Ime</th>
+                                <th>Addresa</th>
                                 <th>Email</th>
-                                <th>Date</th>
+                                <th>Datum</th>
                             </tr>
                         </thead>
                         <tbody>

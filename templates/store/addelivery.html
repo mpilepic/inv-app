@@ -17,9 +17,9 @@
                 <div class="page-header float-right">
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Delivery</a></li>
-                            <li class="active">Add</li>
+                            <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                            <li><a href="#">Dostave</a></li>
+                            <li class="active">Dodaj</li>
                         </ol>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-header">
-                <strong class="card-title">Add Delivery</strong>
+                <strong class="card-title">Dodaj dostavu</strong>
             </div>
             <div class="card-body">
                 <!-- Credit Card -->
@@ -43,11 +43,11 @@
                         <form action="#" method="post" novalidate="novalidate">
                             {% csrf_token %}
                             <div class="form-group">
-                                <label for="order" class="control-label mb-1">Order</label>
+                                <label for="order" class="control-label mb-1">Narudžba</label>
                                 {{ form.order }}
                             </div>
                             <div class="form-group">
-                                <label for="courier_name" class="control-label mb-1">Courier Name</label>
+                                <label for="courier_name" class="control-label mb-1">Ime dostavljača</label>
                                 {{ form.courier_name }}
                             </div>
                             <div>

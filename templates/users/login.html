@@ -31,11 +31,6 @@
     <div class="sufee-login d-flex align-content-center flex-wrap">
         <div class="container">
             <div class="login-content">
-                <div class="login-logo">
-                    <a href="{% url 'dashboard' %}">
-                        <img class="align-content" src="{% static 'images/loginlogo.jpg' %}" alt="">
-                    </a>
-                </div>
                 <div class="login-form">
                     <form method="POST">
                         {% csrf_token %}

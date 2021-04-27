@@ -127,7 +127,7 @@ class OrderForm(forms.ModelForm):
             'drop': forms.Select(attrs={'class': 'form-control', 'id': 'drop'}),
         }
     def __init__(self, *args, **kwargs):
-        super(My_Form, self).__init__(*args, **kwargs)
+        super(OrderForm, self).__init__(*args, **kwargs)
         self.fields['design'].required = False
         self.fields['color'].required = False
 

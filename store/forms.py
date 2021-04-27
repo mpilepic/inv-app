@@ -112,8 +112,7 @@ class ProductForm(forms.ModelForm):
 
 
 class OrderForm(forms.ModelForm):
-    design = forms.CharField(required=False)
-    color = forms.CharField(required=False)
+
     class Meta:
         model = Order
         fields = ['supplier', 'product', 'design', 'color', 'buyer', 'season', 'drop']
@@ -127,6 +126,10 @@ class OrderForm(forms.ModelForm):
             'season': forms.Select(attrs={'class': 'form-control', 'id': 'season'}),
             'drop': forms.Select(attrs={'class': 'form-control', 'id': 'drop'}),
         }
+    def __init__(self, *args, **kwargs):
+        super(My_Form, self).__init__(*args, **kwargs)
+        self.fields['design'].required = False
+        self.fields['color'].required = False
 
 
 class DeliveryForm(forms.ModelForm):

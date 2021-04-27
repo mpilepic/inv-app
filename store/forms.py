@@ -112,6 +112,8 @@ class ProductForm(forms.ModelForm):
 
 
 class OrderForm(forms.ModelForm):
+    design = forms.CharField(required=False)
+    color = forms.CharField(required=False)
     class Meta:
         model = Order
         fields = ['supplier', 'product', 'design', 'color', 'buyer', 'season', 'drop']

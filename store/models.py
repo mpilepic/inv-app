@@ -61,7 +61,7 @@ class Order(models.Model):
     supplier = models.ForeignKey(Supplier, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     design = models.CharField(max_length=50, null=True)
-    color = models.CharField(max_length=50 null=True)
+    color = models.CharField(max_length=50, null=True)
     buyer = models.ForeignKey(Buyer, on_delete=models.CASCADE, null=True)
     season = models.ForeignKey(Season, on_delete=models.CASCADE, null=True)
     drop = models.ForeignKey(Drop, on_delete=models.CASCADE, null=True)
